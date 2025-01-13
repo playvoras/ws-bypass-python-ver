@@ -23,7 +23,7 @@ include(FetchContent)
 # Fetch the latest version of wincpp
 FetchContent_Declare (
 	wincpp 
-	URL https://github.com/atrexus/wincpp/releases/download/v1.4.3/wincpp-src.zip
+	URL https://github.com/atrexus/wincpp/releases/download/v1.4.5/wincpp-src.zip
 	DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 )
 FetchContent_MakeAvailable (wincpp)
