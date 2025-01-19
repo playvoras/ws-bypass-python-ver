@@ -28,6 +28,7 @@ def get_memory_regions(handle):
     return regions
 
 def main():
+    time.sleep(10) # for bloxstrap auto start thingy
     process = None
     while process is None:
         try: process = pymem.Pymem('RobloxPlayerBeta.exe')
@@ -42,5 +43,6 @@ def main():
         if not watched_memory_pool: time.sleep(0.1)
     process.write_int(watched_memory_pool + 0x208, 0x20)
     print(f"[info] modified memory at 0x{watched_memory_pool + 0x208:x}")
+    input("press enter to exit")
 
 if __name__ == "__main__": main()
