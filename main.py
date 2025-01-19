@@ -43,6 +43,6 @@ def main():
         if not watched_memory_pool: time.sleep(0.1)
     process.write_int(watched_memory_pool + 0x208, 0x20)
     print(f"[info] modified memory at 0x{watched_memory_pool + 0x208:x}")
-    input("press enter to exit")
+    #input("press enter to exit")
 
 if __name__ == "__main__": main()
